@@ -51,6 +51,9 @@ const AppRoutes: React.FC = () => {
     </Routes>
   );
 };
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { LoginPage } from "./pages/LoginPage";
 
 const App: React.FC = () => {
   return (
@@ -58,6 +61,10 @@ const App: React.FC = () => {
       <AuthProvider>
         <AppRoutes />
       </AuthProvider>
+      <Routes>
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/" element={<LoginPage />} />
+      </Routes>
     </BrowserRouter>
   );
 };
