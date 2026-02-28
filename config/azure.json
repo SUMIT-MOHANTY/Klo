@@ -1,0 +1,12 @@
+{
+  "subscriptionId": "your-subscription-id",
+  "resourceGroup": "rg-myapp-sandbox",
+  "appServicePlan": "asp-myapp-sandbox",
+  "appService": "app-myapp-sandbox",
+  "location": "eastus",
+  "sku": {
+    "name": "B1",
+    "tier": "Basic",
+    "capacity": 1
+  }
+}
